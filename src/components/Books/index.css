@@ -1,0 +1,8 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  grid-gap: 10px;
+  width: auto;
+  height: 700px;
+  overflow-Y: scroll
+  }
