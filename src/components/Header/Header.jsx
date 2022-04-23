@@ -1,14 +1,16 @@
 import React from "react";
 import IMG from "../../assets/img/NEO_BOOKS.png";
+import '../Header/index.css'
 
 const Header = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <div className="container-fluid">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div id='header' className="container-fluid">
         <a className="navbar-brand" href="/">
           Neo Books
         </a>
         <button
+          id="boton"
           className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"

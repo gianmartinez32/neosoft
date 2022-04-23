@@ -27,16 +27,16 @@ const Books = () => {
         data.Books.map((book) => (
           
           <div className="container contianer-fluid">
-          <div className="card" style={{width: '15rem'}}>
+          <div className="card bg-dark" style={{width: '15rem'}}>
             <img src={book.imgUrl} className="card-img-top" alt="..."></img>
-            <div className="card-body">
+            <div className="card-body" style={{color: '#0294A2'}}>
               <h5 className="card-title">{book.title}</h5>
               <p className="card-text">
                 {book.author}<br></br>
                 {book.review}<br></br>
                 {book.source}
               </p>
-              <a href="/Login" className="btn btn-primary">
+              <a href="/Login" className="btn btn-primary" style={{backgroundColor: '#0294A2'}}>
                 reservar
               </a>
             </div>
@@ -44,8 +44,8 @@ const Books = () => {
           </div>
         ))
       ) : (
-        <div className="spinner-border text-info" role="status">
-  <span className="visually-hidden">Loading...</span>
+        <div class="spinner-border" role="status">
+  <span class="visually-hidden">Loading...</span>
 </div>
       )}
     </div>
